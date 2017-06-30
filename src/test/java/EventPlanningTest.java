@@ -13,7 +13,11 @@ public class EventPlanningTest {
   public void newEventPlanning_getsGuests_1() {
   EventPlanning testEventPlanning = new EventPlanning(1, "Tapas", "Juice Bar", "None");
   assertEquals(1, testEventPlanning.getGests());
+  }
 
-
-}
+  @Test
+  public void newEventPlanning_getsFoodType_Tapas() {
+  EventPlanning testEventPlanning = new EventPlanning(1, "Tapas", "Juice Bar", "None");
+  assertEquals("Tapas", testEventPlanning.getFood());
+  }
 }
