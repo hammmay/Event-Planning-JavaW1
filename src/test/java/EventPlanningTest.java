@@ -75,4 +75,12 @@ public class EventPlanningTest {
     assertEquals(500, testEventPlanning.entertainQuoteCalculation());
   }
 
+  @Test
+  public void newEventPlanning_quoteCalculationFromAllInputs_515() {
+    EventPlanning testEventPlanning = new EventPlanning(1, "Tapas", "Wine", "Live Singer");
+    assertEquals(515, testEventPlanning.withoutDiscoutQuoteCalculation());
+  }
+
+
+
 }

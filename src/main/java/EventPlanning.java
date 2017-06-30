@@ -51,8 +51,8 @@ public class EventPlanning {
      } return 500;
   }
 
-/*  public int withoutDiscoutQuoteCalculation() {
-    return (foodQuoteCalculation + drinkQuoteCalculation + entertainQuoteCalculation)
+  public int withoutDiscoutQuoteCalculation() {
+    return (foodQuoteCalculation() + drinkQuoteCalculation() + entertainQuoteCalculation());
   }
-*/
+
 }
