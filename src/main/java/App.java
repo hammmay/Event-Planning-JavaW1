@@ -5,9 +5,6 @@ public class App {
   public static void main(String[] args) {
     Console myConsole = System.console();
 
-//    boolean programRunning = true;
-
-//    while(programRunning){
       System.out.println("Welcome to Minimalist Catering! If you're looking for a quote, please enter the number of guests you're expecting:");
       String stringGuests = myConsole.readLine();
       int intGuests = Integer.parseInt(stringGuests);
@@ -23,18 +20,13 @@ public class App {
 
       EventPlanning eventPlanning = new EventPlanning(intGuests, stringFood, stringDrinks, stringEntertain);
 
-  //    int quote = eventPlanning.totalQuoteCalculation();
-
       System.out.println("Alright, here are your selections:");
       System.out.println( "----------------------" );
       System.out.println( "Total Guests: " + eventPlanning.mGuests );
       System.out.println( "Guests Will Be Served: " + eventPlanning.mFood );
       System.out.println( "Drink Option: " + eventPlanning.mDrinks );
       System.out.println( "Music: " + eventPlanning.mEntertain );
-      System.out.println( "Here is your quote: $" + "" );
+      System.out.println( "Here is your quote: $" + "");
 
-
-
-//    }
   }
 }

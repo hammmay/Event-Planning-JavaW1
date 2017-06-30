@@ -80,7 +80,4 @@ public class EventPlanningTest {
     EventPlanning testEventPlanning = new EventPlanning(1, "Tapas", "Wine", "Live Singer");
     assertEquals(515, testEventPlanning.withoutDiscoutQuoteCalculation());
   }
-
-
-
 }
