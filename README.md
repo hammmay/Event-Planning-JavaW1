@@ -11,13 +11,13 @@ This application is a demonstration of Java integers, strings, objects, classes,
 |Behavior - Plain English|Input|Output|
 |---|---|---|
 |A user enters the number of guests who are attending, chooses a drinks package, chooses a food package, and chooses an entertainment option, and all the inputs chosen are collected and are displayed back to the user|100, Tapas, Wine, Live Singer|100, Tapas, Wine, Live Singer|
-|No entertainment option is selected by the user and, and the total quote is adjusted|None|$0|
-|The DJ entertainment option is selected by the user and, and the total quote is adjusted|DJ|$250|
-|The Live Singer entertainment option is selected by the user and, and the total quote is adjusted|Live Singer|$500|
-|The juice drinks option is selected by the user and, and the total quote is adjusted based on the number of guests entered|100, Juice|$500|
-|The wine drinks option is selected by the user and, and the total quote is adjusted based on the number of guests entered|100, Wine|$1000|
-|The tapas food option is selected by the user and, and the total quote is adjusted based on the number of guests entered|100, Tapas|$500|
-|The Dinner food option is selected by the user and, and the total quote is adjusted based on the number of guests entered|100, Dinner|$1500|
+|No entertainment option is selected by the user, and the total quote is adjusted|None|$0|
+|The DJ entertainment option is selected by the user, and the total quote is adjusted|DJ|$250|
+|The Live Singer entertainment option is selected by the user, and the total quote is adjusted|Live Singer|$500|
+|The juice drinks option is selected by the user, and the total quote is adjusted based on the number of guests entered|100, Juice|$500|
+|The wine drinks option is selected by the user, and the total quote is adjusted based on the number of guests entered|100, Wine|$1000|
+|The tapas food option is selected by the user, and the total quote is adjusted based on the number of guests entered|100, Tapas|$500|
+|The Dinner food option is selected by the user, and the total quote is adjusted based on the number of guests entered|100, Dinner|$1500|
 |A user enters the number of guests who are attending, chooses a drinks package, chooses a food package, and chooses an entertainment option, and the total quote is displayed back to the user|100, Tapas, Wine, Live Singer|$2000|
 |A user is asked if they have a coupon, selects No, and the quote remains the same|No|$0|
 |A user is asked if they have a coupon, enters the coupon code FREEDJ, and selected the Wine drinks option and DJ after inputting 100 or more people and the total quote drops by $250|100, Wine, DJ|$1000|
