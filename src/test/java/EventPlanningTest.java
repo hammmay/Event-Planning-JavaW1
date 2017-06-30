@@ -16,8 +16,14 @@ public class EventPlanningTest {
   }
 
   @Test
-  public void newEventPlanning_getsFoodType_Tapas() {
+  public void newEventPlanning_getsFoodType_tapas() {
   EventPlanning testEventPlanning = new EventPlanning(1, "Tapas", "Juice Bar", "None");
   assertEquals("Tapas", testEventPlanning.getFood());
+  }
+
+  @Test
+  public void newEventPlanning_getsDrinkType_juiceBar() {
+  EventPlanning testEventPlanning = new EventPlanning(1, "Tapas", "Juice Bar", "None");
+  assertEquals("Juice Bar", testEventPlanning.getDrink());
   }
 }
