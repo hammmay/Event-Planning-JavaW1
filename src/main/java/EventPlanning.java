@@ -42,5 +42,17 @@ public class EventPlanning {
    } return (mGuests * 10);
   }
 
+  public int entertainQuoteCalculation() {
+    if (mEntertain.equals("None")){
+     return 0;
+   } else if (mEntertain.equals("DJ")){
+     return 250;
+     } else if (mEntertain.equals("Live Singer")){
+     } return 500;
+  }
 
+/*  public int withoutDiscoutQuoteCalculation() {
+    return (foodQuoteCalculation + drinkQuoteCalculation + entertainQuoteCalculation)
+  }
+*/
 }
