@@ -4,8 +4,6 @@ public class EventPlanning {
   public String mFood;
   public String mDrinks;
   public String mEntertain;
-  public int mQuote;
-
 
   public EventPlanning (int guests, String food, String drinks, String entertain) {
     mGuests = guests;
@@ -29,4 +27,20 @@ public class EventPlanning {
   public String getEntertain() {
     return mEntertain;
   }
+
+  public int foodQuoteCalculation() {
+    if (mFood.equals("Tapas")){
+     return (mGuests * 5);
+    } else if (mFood.equals("Dinner")){
+    } return (mGuests * 15);
+  }
+
+  public int drinkQuoteCalculation() {
+    if (mDrinks.equals("Juice Bar")){
+     return (mGuests * 5);
+   } else if (mDrinks.equals("Wine")){
+   } return (mGuests * 10);
+  }
+
+
 }

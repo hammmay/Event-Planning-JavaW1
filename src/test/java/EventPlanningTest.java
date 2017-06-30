@@ -34,10 +34,27 @@ public class EventPlanningTest {
   }
 
   @Test
-  public void newEventPlanning_getsEntertainmentType_none() {
+  public void newEventPlanning_quoteCalculationFromFoodType_5() {
     EventPlanning testEventPlanning = new EventPlanning(1, "Tapas", "Juice Bar", "None");
-    assertEquals("None", testEventPlanning.getEntertain());
+    assertEquals(5, testEventPlanning.foodQuoteCalculation());
   }
 
+  @Test
+  public void newEventPlanning_quoteCalculationFromFoodType_15() {
+    EventPlanning testEventPlanning = new EventPlanning(1, "Dinner", "Juice Bar", "None");
+    assertEquals(15, testEventPlanning.foodQuoteCalculation());
+  }
+
+  @Test
+  public void newEventPlanning_quoteCalculationFromDrinkType_5() {
+    EventPlanning testEventPlanning = new EventPlanning(1, "Tapas", "Juice Bar", "None");
+    assertEquals(5, testEventPlanning.drinkQuoteCalculation());
+  }
+
+  @Test
+  public void newEventPlanning_quoteCalculationFromDrinkType_10() {
+    EventPlanning testEventPlanning = new EventPlanning(1, "Tapas", "Wine", "None");
+    assertEquals(10, testEventPlanning.drinkQuoteCalculation());
+  }
 
 }
