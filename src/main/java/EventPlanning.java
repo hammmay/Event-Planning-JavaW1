@@ -1,9 +1,10 @@
 //back end
 public class EventPlanning {
-  private int mGuests;
-  private String mFood;
-  private String mDrinks;
-  private String mEntertain;
+  public int mGuests;
+  public String mFood;
+  public String mDrinks;
+  public String mEntertain;
+  public int mQuote;
 
 
   public EventPlanning (int guests, String food, String drinks, String entertain) {

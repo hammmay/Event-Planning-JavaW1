@@ -11,26 +11,33 @@ public class EventPlanningTest {
 
   @Test
   public void newEventPlanning_getsGuests_1() {
-  EventPlanning testEventPlanning = new EventPlanning(1, "Tapas", "Juice Bar", "None");
-  assertEquals(1, testEventPlanning.getGests());
+    EventPlanning testEventPlanning = new EventPlanning(1, "Tapas", "Juice Bar", "None");
+    assertEquals(1, testEventPlanning.getGests());
   }
 
   @Test
   public void newEventPlanning_getsFoodType_tapas() {
-  EventPlanning testEventPlanning = new EventPlanning(1, "Tapas", "Juice Bar", "None");
-  assertEquals("Tapas", testEventPlanning.getFood());
+    EventPlanning testEventPlanning = new EventPlanning(1, "Tapas", "Juice Bar", "None");
+    assertEquals("Tapas", testEventPlanning.getFood());
   }
 
   @Test
   public void newEventPlanning_getsDrinkType_juiceBar() {
-  EventPlanning testEventPlanning = new EventPlanning(1, "Tapas", "Juice Bar", "None");
-  assertEquals("Juice Bar", testEventPlanning.getDrink());
+    EventPlanning testEventPlanning = new EventPlanning(1, "Tapas", "Juice Bar", "None");
+    assertEquals("Juice Bar", testEventPlanning.getDrink());
   }
 
   @Test
   public void newEventPlanning_getsEntertainmentType_none() {
-  EventPlanning testEventPlanning = new EventPlanning(1, "Tapas", "Juice Bar", "None");
-  assertEquals("None", testEventPlanning.getEntertain());
+    EventPlanning testEventPlanning = new EventPlanning(1, "Tapas", "Juice Bar", "None");
+    assertEquals("None", testEventPlanning.getEntertain());
   }
+
+  @Test
+  public void newEventPlanning_getsEntertainmentType_none() {
+    EventPlanning testEventPlanning = new EventPlanning(1, "Tapas", "Juice Bar", "None");
+    assertEquals("None", testEventPlanning.getEntertain());
+  }
+
 
 }
