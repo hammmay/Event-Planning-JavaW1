@@ -3,14 +3,14 @@ public class EventPlanning {
   private int mGuests;
   private String mFood;
   private String mDrinks;
-/*  private String mEntertain;
-*/
+  private String mEntertain;
+
 
   public EventPlanning (int guests, String food, String drinks, String entertain) {
     mGuests = guests;
     mFood = food;
     mDrinks = drinks;
-/*    mEntertain = entertain; */
+    mEntertain = entertain;
   }
 
   public int getGests() {
@@ -25,4 +25,7 @@ public class EventPlanning {
     return mDrinks;
   }
 
+  public String getEntertain() {
+    return mEntertain;
+  }
 }

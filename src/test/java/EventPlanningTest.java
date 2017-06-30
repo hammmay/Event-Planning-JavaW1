@@ -26,4 +26,11 @@ public class EventPlanningTest {
   EventPlanning testEventPlanning = new EventPlanning(1, "Tapas", "Juice Bar", "None");
   assertEquals("Juice Bar", testEventPlanning.getDrink());
   }
+
+  @Test
+  public void newEventPlanning_getsEntertainmentType_none() {
+  EventPlanning testEventPlanning = new EventPlanning(1, "Tapas", "Juice Bar", "None");
+  assertEquals("None", testEventPlanning.getEntertain());
+  }
+
 }
