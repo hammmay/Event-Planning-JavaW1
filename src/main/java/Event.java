@@ -1,11 +1,11 @@
 //back end
-public class EventPlanning {
+public class Event {
   public int mGuests;
   public String mFood;
   public String mDrinks;
   public String mEntertain;
 
-  public EventPlanning (int guests, String food, String drinks, String entertain) {
+  public Event (int guests, String food, String drinks, String entertain) {
     mGuests = guests;
     mFood = food;
     mDrinks = drinks;

@@ -18,14 +18,14 @@ public class App {
       System.out.println("And finally, the music. For only $250, you get a DJ spinning tunes from his iPad, or for $500 you get a live singer, but these are optional additions. Would you like a DJ, a Live Singer, or None?");
       String stringEntertain = myConsole.readLine();
 
-      EventPlanning eventPlanning = new EventPlanning(intGuests, stringFood, stringDrinks, stringEntertain);
+      Event event = new Event(intGuests, stringFood, stringDrinks, stringEntertain);
 
       System.out.println("Alright, here are your selections:");
       System.out.println( "----------------------" );
-      System.out.println( "Total Guests: " + eventPlanning.mGuests );
-      System.out.println( "Guests Will Be Served: " + eventPlanning.mFood );
-      System.out.println( "Drink Option: " + eventPlanning.mDrinks );
-      System.out.println( "Music: " + eventPlanning.mEntertain );
+      System.out.println( "Total Guests: " + event.mGuests );
+      System.out.println( "Guests Will Be Served: " + event.mFood );
+      System.out.println( "Drink Option: " + event.mDrinks );
+      System.out.println( "Music: " + event.mEntertain );
       System.out.println( "Here is your quote: $" + "");
 
   }
