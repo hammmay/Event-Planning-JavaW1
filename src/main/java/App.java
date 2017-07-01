@@ -18,15 +18,18 @@ public class App {
       System.out.println("And finally, the music. For only $250, you get a DJ spinning tunes from his iPad, or for $500 you get a live singer, but these are optional additions. Would you like a DJ, a Live Singer, or None?");
       String stringEntertain = myConsole.readLine();
 
-      Event event = new Event(intGuests, stringFood, stringDrinks, stringEntertain);
+      Event customerEvent = new Event(intGuests, stringFood, stringDrinks, stringEntertain);
 
       System.out.println("Alright, here are your selections:");
       System.out.println( "----------------------" );
-      System.out.println( "Total Guests: " + event.mGuests );
-      System.out.println( "Guests Will Be Served: " + event.mFood );
-      System.out.println( "Drink Option: " + event.mDrinks );
-      System.out.println( "Music: " + event.mEntertain );
-      System.out.println( "Here is your quote: $" + "");
+      System.out.println( "Total Guests: " + customerEvent.getGests() );
+      System.out.println( "Guests Will Be Served: " + customerEvent.getFood() );
+      System.out.println( "Drink Option: " + customerEvent.getDrink() );
+      System.out.println( "Music: " + customerEvent.getEntertain() );
+      System.out.println( "Here is your quote: $" + customerEvent.withoutDiscoutQuoteCalculation() );
 
+      System.out.println("You may qualify for a deal! If you are expecting 100 or more guests, and you've included a wine package, as well as a DJ, you get the DJ for free if you enter the coupon code FREEDJ below. If you are expecting 200 or more guests, and you've included a Dinner package as well as a Live Singer, you get the Live Singer for free if you enter the code FREESINGER below:");
+      String stringCoupon = myConsole.readLine();
+      System.out.println( "Here is your updated quote: $" + customerEvent.withDiscountQuoteCalculation(stringCoupon) );
   }
 }
